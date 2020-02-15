@@ -7,5 +7,7 @@ namespace RMapi.Models
 {
     public class Driver_Wallet
     {
+        public int DRIVERID { get; set;}
+        public int RMC { get; set; }
     }
 }
