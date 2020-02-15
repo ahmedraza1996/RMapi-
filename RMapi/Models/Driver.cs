@@ -177,7 +177,7 @@ namespace RMapi.Models
             return returnMessage;
         }
 
-        public static string DeleteActivity(string DRIVERID, MySqlConnection conn = null)
+        public static string DeleteDriver(string DRIVERID, MySqlConnection conn = null)
         {
             string returnMessage = "";
             try
