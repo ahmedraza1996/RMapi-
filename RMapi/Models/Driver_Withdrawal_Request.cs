@@ -17,7 +17,7 @@ namespace RMapi.Models
         public int DRIVERID {get; set;}
 
     }
-    public class UserManager : BaseManager
+    public class DWithdrawalManager : BaseManager
     {
         public static List<Driver_Withdrawal_Request> GetWithReq(string whereclause, MySqlConnection conn = null)
         {
@@ -81,7 +81,7 @@ namespace RMapi.Models
 
         }
 
-        public static string SaveUser(User objWReq, MySqlConnection conn = null, MySqlTransaction trans = null)
+        public static string SaveUser(Driver_Withdrawal_Request objWReq, MySqlConnection conn = null, MySqlTransaction trans = null)
         {
             string returnMessage = "";
             string sWITHREQID = "";

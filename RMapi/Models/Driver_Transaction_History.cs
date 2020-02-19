@@ -20,7 +20,7 @@ namespace RMapi.Models
     {
         public static List<Driver_Transaction_History> GetHistory(string whereclause, MySqlConnection conn = null)
         {
-            User objHist = null;
+            Driver_Transaction_History objHist = null;
             List<Driver_Transaction_History> lstHist = new List<Driver_Transaction_History>();
             try
             {
@@ -81,7 +81,7 @@ namespace RMapi.Models
 
         }
 
-        public static string SaveHistory(User objHist, MySqlConnection conn = null, MySqlTransaction trans = null)
+        public static string SaveHistory(Passenger_Transaction_History objHist, MySqlConnection conn = null, MySqlTransaction trans = null)
         {
             string returnMessage = "";
             string sDRIVERID = "";

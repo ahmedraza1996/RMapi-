@@ -38,7 +38,7 @@ namespace RMapi.Models
                             while (reader.Read())
                             {
                                 objWall = ReaderDataUser(reader);
-                                lstUser.Add(objWall);
+                                lstDWall.Add(objWall);
                             }
                         }
                         else
